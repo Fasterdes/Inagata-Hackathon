@@ -1,4 +1,6 @@
 module.exports = {
+  important: true,
+
   daisyui: {
     themes: [
       {
@@ -45,6 +47,14 @@ module.exports = {
           green: '#B6E2D0',
         },
       },
+    },
+
+    colors: {
+      'style9-blue': '#1FA7FF',
+      'style9-blue-dark': '#037ecd',
+      'style9-red': '#FF5F5F',
+      'style9-yellow': '#FFD923',
+      'style9-green': '#24D796',
     },
 
     fontFamily: {

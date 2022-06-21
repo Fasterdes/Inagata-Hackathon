@@ -6,6 +6,39 @@
 
 @layer base {
   body {
-    @apply font-poppins;
+    @apply font-poppins overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-[#404040];
+  }
+
+  p {
+    @apply text-[#787879] leading-8;
+  }
+}
+
+@layer components {
+  .btn-style-9 {
+    @apply btn normal-case text-base text-[#fff] font-semibold bg-style9-blue border-0 px-10 rounded-2xl hover:bg-style9-blue-dark;
+  }
+}
+
+@layer utilities {
+  .to-gray {
+    filter: brightness(0) saturate(100%) invert(61%) sepia(0%) saturate(397%)
+      hue-rotate(174deg) brightness(97%) contrast(75%);
+  }
+
+  a.nuxt-link-active {
+    @apply after:content-[''] after:absolute after:left-0 after:right-0 after:mx-auto after:top-11 after:w-10 after:h-[3px] after:bg-[#fff];
+  }
+  a.nuxt-link-exact-active {
+    @apply after:content-[''] after:absolute after:left-0 after:right-0 after:mx-auto after:top-11 after:w-10 after:h-[3px] after:bg-[#fff];
   }
 }
